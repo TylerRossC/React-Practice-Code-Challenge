@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 
 const Table = (props) => {
 
@@ -8,10 +8,16 @@ const Table = (props) => {
     })
   }
 
+
+  // const updateMoney = () => {
+  //   const sushiPrice = props.sushi.price
+  //   setMoney(money - sushiPrice)
+  // }
+
   return (
     <Fragment>
       <h1 className="remaining">
-        You have: ${ /* Give me how much money I have left */ } remaining!
+        You have: ${props.money} remaining!
       </h1>
       <div className="table">
         <div className="stack">
